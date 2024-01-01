@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+</head>
+<body>
+    <button id="checkout-button">Checkout</button>
+    <script src="client.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () =>{ 
+    const stripe = Stripe('YOUR_PUBLISHABLE_KEY'); // Replace with your actual publishable key
+
+    const button = document.getElementById('checkout-button');
+    button.addEventListener('click', () => {
+        fetch('/create-checkout-session', {
+            method: 'POST',
+        })
+        .then(response => response.json())
+        .then(session => {
+            return stripe.redirectToCheckout({ sessionId: session.id });
+        })
+        .then(result => {
+            if (result.error) {
+                console.error(result.error.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+});
+
+    </script>
+</body>
+
+
+</html>
+

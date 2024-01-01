@@ -1,0 +1,14 @@
+secret key:   sk_test_51OARnJSF3jIZ77NybjqJhiiAeHKi9aWQCMiPGrj9EgLkiif6FWNCPJCL2LBGm6BKn8EmC1zoh0Z6IbRDlPx7e3P0004rGXpJdx
+
+
+
+publish key: pk_test_51OARnJSF3jIZ77NyMlyyueNKgzOLfalO7wiRyi6zBFK3ymmNOyOVpoCfjx7eOBgk2XchH11JHaugUxIyem27mNjo00tRfmQhwp
+
+
+
+// ************* RAZORPAY ****************
+keyID:  rzp_test_g5rKq0AnXwnqFN
+secret_key: nVi2cEsT6QPH3Rsj238ocynw
+
+
+

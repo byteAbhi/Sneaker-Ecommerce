@@ -1,0 +1,75 @@
+<!-- views/signup.ejs -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <form id="signupForm" action="/signup" method="post" class="max-w-md mx-auto bg-white p-8 shadow-md rounded-lg mt-10">
+
+    <h2 class="text-2xl font-semibold text-center mb-4">Sign Up</h2>
+    <% if (messages && messages.length > 0) { %>
+      <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4">
+        <strong class="font-bold">Error!</strong>
+        <% messages.forEach(message => { %>
+          <span class="block sm:inline"><%= message %></span>
+        <% }); %>
+      </div>
+    <% } %>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+      <input type="text" name="name" id="name" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="John Doe" required>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="username">Username</label>
+      <input type="text" name="username" id="username" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="johndoe" required>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Phone Number</label>
+      <input type="text" name="phone" id="phone" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="123-456-7890" required>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
+      <input type="password" name="password" id="password" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="********" required>
+    </div>
+
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">email</label>
+      <input type="email" name="email" id="email" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="********" required>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Sign Up</button>
+    </div>
+    <script>
+      document.getElementById('signupForm').addEventListener('submit', function(event) {
+        const name = document.getElementById('name').value.trim();
+        const username = document.getElementById('username').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const password = document.getElementById('password').value.trim();
+        
+        if (!name || !username || !phone || !password) {
+          event.preventDefault();
+          alert('All fields are required!');
+        } else if (!/^[A-Za-z\s]+$/.test(name)) {
+          event.preventDefault();
+          alert('Name must contain only letters and spaces!');
+        } else if (!/^\d{3}-\d{3}-\d{4}$/.test(phone)) {
+          event.preventDefault();
+          alert('Phone number must be in the format XXX-XXX-XXXX!');
+        }
+      });
+    
+
+      function redirectToPayment() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    // Redirect to the payment page with name and email as query parameters
+    window.location.href = `/buy?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}`;
+}
+    </script>
+     
+     
+     
+    
+  </form>  -->
+    
+
+ 
+                        

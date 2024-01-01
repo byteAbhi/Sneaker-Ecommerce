@@ -1,0 +1,369 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SneakUP/Uploads</title>
+  <link rel="stylesheet" href="/css/index.css">
+ 
+  <link rel="stylesheet" href="/css/sell.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/more.css">
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" >
+  <link href="https://unpkg.com/sneaker-ui/dist/sneaker-ui.min.css" >
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Add this to your <head> section -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.10/dist/umd/popper.min.js" type="text/js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/js"></script>
+
+
+</head>
+  
+
+<body class="bg-gray-100">
+
+  <nav class="nav-bg navbar navbar-expand-lg navbar-dark fixed-top-nav custom-cream ">
+    <div class="resize">
+      <a class="navbar-brand" href="#"><img src="/images/logo-2-1@2x.png" alt=""></a>
+    </div>
+    <button class="navbar-toggler custom-brown" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" id="search_field" placeholder="Search" aria-label="Search">
+        <!-- Removed "saveCart" from here -->
+      </form>
+      <button type="button" class="btn btn-success my-2 my-sm-0 custom-brown" data-toggle="modal"
+        data-target="#staticBackdrop">
+        <i class="fas fa-shopping-cart total-count"></i>
+      </button>
+
+      <ul class="navbar-nav mr-auto navbar-li">
+        <!-- Add any navigation items here if needed -->
+        <li class="active"><a href="dashboard">Home</a></li>
+        <li class="active"><a href="buy">Buy</a></li>
+        <li><a href="index">Sell</a></li>
+        <li><a href="report">R & A</a></li>
+        <li class="login"><a href="/logout">Logout</a></li>
+        
+      </ul>
+
+    </div>
+  </nav>
+  <style>
+    body {
+      margin: 0;
+      margin-top: 0px;
+      font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      background-color: #fff;
+      position: relative;
+
+      margin-top: 18%;
+    }
+      .sell {
+        text-align: center;
+      }
+    
+  </style>
+  <div class="sell">
+    <h1 style="font-weight: bolder;">SELL YOUR SNEAKER</h1>
+    <p style="font-size: 1.1rem;">List your sneakers for free and get paid!</p>
+  </div>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  
+
+
+
+  
+  <!-- seller and product details  -->
+
+
+  <div class="seller-product" style="display: list-item">
+    <div class="max-w-6xl mx-auto bg-white p-6 rounded shadow-md">
+
+      <div class="flex justify-between">
+        <!-- Seller Form -->
+          
+        <form action="/upload" method="POST" class="w-full max-w-2xl mx-auto back-img" enctype="multipart/form-data">
+          <div class="flex inner-back"> <!-- Add this flex container -->
+             
+            <div class="seller-info" id="sellerForm">
+              <h2 class="text-xl font-bold mb-2">Seller Details</h2>
+              <div class="mb-4">
+                <label class="block font-bold text-gray-700 mb-2">Seller Name</label>
+               <input type="text" name="seller_name" class="form-input w-full" required > <hr>
+              </div>
+              <div class="mb-4">
+                <label class="block font-bold text-gray-700 mb-2">Mobile No.</label>
+                <input type="tel" name="mobile_no" class="form-input w-full" required>
+              </div>
+              <div class="mb-4">
+                <label class="block font-bold text-gray-700 mb-2">Address</label>
+                <textarea name="address" class="form-input w-full" required></textarea>
+              </div>
+              <div class="mb-4">
+                <label class="block font-bold text-gray-700 mb-2">Email</label>
+                <input type="email" name="email" class="form-input w-full" required>
+              </div>
+            </div>
+            
+            <!-- Product Form -->
+            <div class="product-info">
+              <h2 class="text-xl font-bold mb-2">Product Details</h2>
+              <div class="mb-4">
+                <label class="block font-bold text-gray-700 mb-2" style="margin-top: 2.5rem;">Product Name</label>
+                <input type="text" name="product_name" class="form-input w-full" required>
+              </div>
+              <div class="mb-4">
+                <label class="block font-bold text-gray-700 mb-2" style="position: relative;top: 1rem;">Product Price</label>
+                <div class="flex">
+                  <!-- <h6>Orignal_price</h6> -->
+                  <input type="text" name="original_price" class="form-input flex-1 mr-2"  id="currencyInput" placeholder="Orignal" onkeyup="formatCurrency(this)" required>
+                  <!-- <label for="currencyInput">Enter Amount (INR):</label> -->
+                  <!-- <h6>reseelling_price</h6> -->
+                  <input type="text" name="resell_price" class="form-input flex-1" placeholder="Resell" id="currencyInput" onkeyup="formatCurrency(this)" required>
+                </div>
+              </div>
+              <h1 class="text-2xl font-bold mb-4">Upload Images</h1>
+              <label class="browse-file">
+                Browse..
+              <input type="file" name="photos" class="mb-4" multiple required>
+            </label>
+            </div>
+          </div>
+
+          <div id="preview-container" class="flex flex-wrap mb-4">
+            <!-- Image previews will be added here -->
+          </div>
+
+          <button type="submit" id="submit" class="bg-blue-500 text-red px-4 py-2 rounded mx-auto block mt-4">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<!-- ******more Description****** -->
+
+
+    
+   
+<!-- ****************footer section ************ -->
+
+<footer class="footer-section">
+  <div class="container">
+      <div class="footer-cta pt-5 ">
+          <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div class="cta-text">
+                          <h4>Find us</h4>
+                          <span>MODERN COLLEGE GANESHKHIND, PUNE-16 </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>+91 7058054327</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="far fa-envelope-open"></i>
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>SneakUP@gmail.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-content pt-5 pb-1">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="/images/logo-2-1@2x.png" class="img-fluid" alt="logo"></a>
+                      </div>
+                      <div class="footer-text">
+                          <p>Welcome to SneakUP, where passion for sneakers meets a commitment to providing the best shopping experience for sneaker enthusiasts worldwide.
+                            At SneakUP, our journey began with a shared love for sneakers and a vision to create a platform that goes beyond commerce.
+                             We understand that sneakers are not just footwear; they're expressions of style, identity, and culture.
+                             That's why we've curated a collection that transcends trends and embraces the diversity of sneaker culture.
+                          </p>
+                      </div>
+                      <div class="footer-social-icon">
+                          <span>Follow us</span>
+                          <ul class="social_icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#">Our Team</a></li>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Our Gallery</a></li>
+                          <li><a href="#">Selection Process</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Sponsorship</a></li>
+                          <li><a href="#">Our Policies</a></li>
+                          <li><a href="#">Our Team</a></li>
+                          <li><a href="#">Contact us</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Subscribe</h3>
+                      </div>
+                      <div class="footer-text mb-25">
+                          <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                      </div>
+                      <div class="subscribe-form">
+                          <form action="#">
+                              <input type="text" placeholder="Email Address">
+                              <button><i class="fab fa-telegram-plane"></i></button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2023, All Right Reserved <a href="#">SneakUP</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Policy</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+   
+
+      <!-- *******************Currency Change************ -->
+      <script>
+        function formatCurrency(input) {
+            // Remove all non-numeric characters
+            let value = input.value.replace(/[^0-9]/g, '');
+            
+            // Add commas for thousands separator
+            value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            
+            // Set the formatted value back to the input field
+            input.value = '₹'+"   " + value;
+        }
+       
+    </script>
+
+<!-- *******************deleting images************** -->
+  <script>
+    function previewImages() {
+      const previewContainer = document.getElementById('preview-container');
+      previewContainer.innerHTML = '';
+
+      const files = document.querySelector('input[type=file]').files;
+      for (const file of files) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          img.className = 'm-2 border border-gray-400';
+          img.width = 100;
+
+          const deleteButton = document.createElement('button');
+          deleteButton.type = 'button';
+          deleteButton.className = 'bg-red-700 text-red px-2 py-1 rounded';
+          deleteButton.innerText = 'Delete';
+          deleteButton.addEventListener('click', function () {
+            container.remove();;
+          });
+
+          const container = document.createElement('div');
+          container.appendChild(img);
+          container.appendChild(deleteButton);
+
+          previewContainer.appendChild(container);
+        }
+
+        reader.readAsDataURL(file);
+      }
+    }
+
+    document.querySelector('input[type=file]').addEventListener('change', previewImages);
+  </script>
+
+
+
+  <!-- views/index.ejs, views/login.ejs, views/signup.ejs -->
+  <% if (messages && messages.length> 0) { %>
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative">
+      <strong class="font-bold">Error!</strong>
+      <% messages.forEach(message=> { %>
+        <span class="block sm:inline">
+          <%= message %>
+        </span>
+        <% }); %>
+    </div>
+    <% } %>
+
+      <script src="/js/gsap.js"></script>
+      <script src="/js/gsap.js"></script>
+</body>
+
+</html>

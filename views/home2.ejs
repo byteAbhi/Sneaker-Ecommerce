@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <meta name="theme-color" content="#db5945">
+<title> SneakUP </title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- <link rel="stylesheet" href="/css/global.css" /> -->
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Add this to your <head> section -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.10/dist/umd/popper.min.js" type="text/js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/js"></script>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- <script src="/js/main.js"></script> -->
+  <script src="path-to-slick-slider/slick.min.js" type="text/js"></script>
+
+</head>
+
+<body>
+  <main>
+    
+    <nav class="nav-bg navbar navbar-expand-lg navbar-dark fixed-top-nav custom-cream ">
+      <div class="resize">
+      <a class="navbar-brand" href="#"><img src="/images/logo-2-1@2x.png" alt=""></a>
+    </div>
+      <button class="navbar-toggler custom-brown" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" id="search_field" placeholder="Search" aria-label="Search">
+          <!-- Removed "saveCart" from here -->
+        </form>
+        <button type="button" class="btn btn-success my-2 my-sm-0 custom-brown" data-toggle="modal"
+          data-target="#staticBackdrop">
+          <a href="login">
+          <i class="fas fa-shopping-cart total-count" style="color: white;"></i>
+        </a>
+        </button>
+
+        <ul class="navbar-nav mr-auto navbar-li">
+          <!-- Add any navigation items here if needed -->
+          <li class="active"><a href="login">Home</a></li>
+          <li class="active" id="buy"><a href="login">Buy</a></li>
+          <li><a href="login">Sell</a></li>
+          <li><a href="login">R & A</a></li>
+          <li class="login"><a href="login">Create Accout</a></li>
+           
+        </ul>
+
+      </div>
+    </nav>
+
+    <div id="brands">
+      <div class="brands">
+        <h1>Brands</h1>
+      </div>
+
+
+      <a href="login"><img class="nike-logo-1" alt="" src="/images/nike-logo-1@2x.png" id="nikeLogo1" /></a>
+
+      <a href="login"><img class="adidas-logo-1" alt="" src=" /images/adidas-logo-1@2x.png"
+          id="adidasLogo1" /></a>
+
+      <a href="login"><img class="air-jordan-jumpman-logo-1" alt=""
+          src=" /images/air-jordan-jumpman-logo-1@2x.png" id="airJordanJumpmanLogo1" /></a>
+
+      <a href="login"> <img class="new-balance-logo-1" alt="" src=" /images/new-balance-logo-1@2x.png"
+          id="newBalanceLogo1" /></a>
+    </div>
+    <div class="video">
+      <video autoplay loop muted src="/videos/Dior Air Jordan 1 - Cinematic Sneaker Video.mp4" type="video/mp4">
+    </div>
+
+    <section>
+      <!-- <div class="featured-area pt-100 pb-70"> -->
+      <div class="container custom-cream">
+        <div class="tab featured-tab-area">
+          <!--  <div class="row justify-content-center">
+
+               <div class="col-lg-6 col-md-8">
+                  <ul class="tabs active">
+                    <li class="">
+                      <a href="#">
+                        ALL
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#">
+                        NIKE
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#">
+                        ADiDAS
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#">
+                        JORDAN
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#">
+                        NEW BALANCE
+                      </a>
+                    </li>
+                  </ul>
+                </div> 
+              </div>  -->
+          <!-- <div class="tab_content current active pt-45"> -->
+          <div class="tabs_item current">
+            <div class="row justify-content-center">
+              <div class="trending-sneakers">
+                <h1>Trending Sneakers</h1>
+              </div>
+              <div class="slider">
+                <div class="trends">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/Adidas OriginalsSAMBA OG CLOUD WHITECORE BLACK.jpeg"
+                            alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                       <div class="font-adjust"> 
+                         <h3><a href="#">Adidas  
+                           
+                          <h3 style="font-size: medium;">SAMBA OG CLOUD WHITECORE BLACK</h3></a></h3>
+                         
+                        <hr></div>
+                        <div class="content-in">
+                          <h4>₹&ensp; 11,999 </h4>
+                          <span>(4.9)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Adidas Originals SAMBA OG CLOUD WHITECORE BLACK"
+                            data-price="11999" class="default-btn border-radius-5"> Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/Adidas OriginalsFORUM MID GREEN WHITE.jpeg"
+                            alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">Adidas   <h3 style="font-size: medium;">FORUM MID <br> GREEN WHITE</h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹ &ensp;12,999 </h4>
+                          <span>(4.4)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Adidas Originals FORUM MID GREEN WHITE" data-price="12999"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/New Balance550 SEA SALT.jpeg" alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">New Balance <h3 style="font-size: medium;">550 SEA SALT <br> <br>  </h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹ &ensp;18,049 </h4>
+                          <span>(4.4)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="New Balance 550 SEA SALT" data-price="18049"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/Air_jordanRetero.jpeg" alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">Jordan <h3 style="font-size: medium;">AIR JORDAN 13 RETRO BLACK TRUE RED </h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹ &ensp;19,295 </h4>
+                          <span>(4.4)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Jordan AIR JORDAN 13 RETRO BLACK TRUE RED" data-price="19295"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/NikeAIR VAPORMAX BRONZINE.jpeg" alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">Nike<h3 style="font-size: medium;">AIR VAPORMAX BRONZINE <br> <br></h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹ &ensp;19,295 </h4>
+                          <span>(4.4)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="AIR VAPORMAX BRONZINE" data-price="19295"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/Adidas OriginalsGAZELLE BLACK .jpeg" alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">Adidas <h3 style="font-size: medium;">GAZELLE BLACK <br> <br> </h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹ &ensp;09,899 </h4>
+                          <span>(4.4)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Adidas Originals GAZELLE BLACK" data-price="09899"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img
+                            src="/images/imagesSneaker/JordanAIR JORDAN 2 RETRO LOW UNIVERSITY BLUE CEMENT.jpeg"
+                            alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">Jordan <h3 style="font-size: medium;">AIR JORDAN 2 RETRO LOW UNIVERSITY BLUE CEMENT</h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹&ensp; 20,295 </h4>
+                          <span>(4.9)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Jordan AIR JORDAN 2 RETRO LOW UNIVERSITY BLUE CEMENT"
+                            data-price="499" class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/NikeAIR MAX 90 FUTURA FUCHSIA DREAM.jpeg"
+                            alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">Nike <h3 style="font-size: medium;">AIR MAX 90 FUTURA FUCHSIA DREAM</h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹&ensp; 13,995 </h4>
+                          <span>(4.0)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Nike AIR MAX 90 FUTURA FUCHSIA DREAM" data-price="13995"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/JordanAIR JORDAN 11 RETRO VARSITY RED.jpeg"
+                            alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">Jordan <h3 style="font-size: medium;">AIR JORDAN 11 RETRO VARSITY RED </h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹&ensp; 18,266 </h4>
+                          <span>(4.9)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Jordan AIR JORDAN 11 RETRO VARSITY RED" data-price="18266"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-container">
+                  <button class="prev"><i class="fa-solid fa-circle-left"></i></i></button>
+                  <button class="next"><i class="fa-solid fa-circle-right"></i></i></button>
+                </div>
+                
+              </div>
+
+
+              <div class="most-popular-sneakers">
+                <h1>Most Popular Sneakers</h1>
+              </div>
+              <div class="slider">
+                <div class="trends">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/NikeDUNK HIGH PANDA.jpeg" alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">Nike <h3 style="font-size: medium;">DUNK HIGH PANDA <br> <br></h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹ &ensp;09,295 </h4>
+                          <span>(4.4)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Nike DUNK HIGH PANDA" data-price="09295"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/New Balance2002R LIGHT CREAM PURPLE.jpeg"
+                            alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">New Balance <h3 style="font-size: medium;">2002R LIGHT CREAM PURPLE</h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹ &ensp;19,799 </h4>
+                          <span>(3.9)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="New Balance 2002R LIGHT CREAM PURPLE" data-price="19799"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/Adidas OriginalsFORUM MID GREEN WHITE.jpeg"
+                            alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">Adidas  <h3 style="font-size: medium;">FORUM MID <br> GREEN WHITE</h3></a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹ &ensp;12,999 </h4>
+                          <span>(4.4)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Adidas Originals FORUM MID GREEN WHITE" data-price="12999"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="featured-item">
+                      <div class="featured-item-img">
+                        <a href="#">
+                          <img src="/images/imagesSneaker/new_balanceGrey.jpeg"
+                            alt="Images">
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h3><a href="#">New Balance   <h3 style="font-size: medium;">992 NAVY GREY <br> <br></h3> </a></h3>
+                        <hr>
+                        <div class="content-in">
+                          <h4>₹ &ensp; 31,499 </h4>
+                          <span>(4.4)<i class="fa fa-star"></i></span>
+                        </div>
+                        <hr>
+                        <div class="featured-content-list">
+                          <button type="button" data-name="Adidas Originals FORUM MID GREEN WHITE" data-price="31499"
+                            class="default-btn border-radius-5">Add to cart</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs_item">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/Nike AIR JORDAN 1 SUMMIT WHITE.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Nike <h3 style="font-size: medium;">AIR JORDAN 1 SUMMIT WHITE</h3> </a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹ &ensp;13,295 </h4>
+                      <span>(4.9)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Nike AIR JORDAN 1 SUMMIT WHITE" data-price="13295"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/NikeAIR FORCE 1 '07 WHITE.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Nike <h3 style="font-size: medium;">AIR FORCE 1 '07 WHITE</h3> </a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹&ensp;  09,695 </h4>
+                      <span>(4.9)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Nike AIR FORCE 1 '07 WHITE" data-price="09695"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/NikeAIR MAX 1 PHOTON GREY AQUA.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Nike <h3 style="font-size: medium;">AIR MAX 1 PHOTON GREY AQUA</h3> </a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹&ensp; 13,995</h4>
+                      <span>(4.9)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Nike AIR MAX 1 PHOTON GREY AQUA" data-price="13995"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/NikeAIR MAX 90 FUTURA FUCHSIA DREAM.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Nike <h3 style="font-size: medium;">AIR MAX 90 FUTURA FUCHSIA DREAM</h3></a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹&ensp; 13,995 </h4>
+                      <span>(3.9)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Nike AIR MAX 90 FUTURA FUCHSIA DREAM" data-price="13995"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs_item">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/Adidas OriginalsBAD BUNNY CAMPUS SUPCOL.jpeg"
+                        alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Adidas Originals <h3 style="font-size: medium;">BAD BUNNY CAMPUS SUPCOL<h3 style="font-size: medium;"></h3></a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹ &ensp;15,999 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Adidas Originals BAD BUNNY CAMPUS SUPCOL" data-price="15999"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/Adidas OriginalsFORUM 84 LOW CLEAR AQUA.jpeg"
+                        alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Adidas Originals <h3 style="font-size: medium;">FORUM 84 LOW CLEAR AQUA<h3 style="font-size: medium;"></h3></a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹&ensp; 17,099 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Adidas Originals FORUM 84 LOW CLEAR AQUA" data-price="17099"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/Adidas OriginalsFORUM 84 LOW CLEAR AQUA.jpeg"
+                        alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Adidas Originals <h3 style="font-size: medium;">FORUM 84 LOW CLEAR AQUA</a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹ &ensp;17,099 </h4>
+                      <span>(4.0)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Adidas Originals FORUM 84 LOW CLEAR AQUA" data-price="17099"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/Adidas OriginalsGAZELLE BLACK .jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Adidas Originals<h3 style="font-size: medium;"> GAZELLE BLACK</a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹ &ensp;09,899 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Adidas Originals GAZELLE BLACK" data-price="09899"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs_item">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/JordanAIR JORDAN 11 RETRO VARSITY RED.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Jordan <h3 style="font-size: medium;">AIR JORDAN 11 RETRO VARSITY RED </a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹&ensp; 18,266 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Jordan AIR JORDAN 11 RETRO VARSITY RED" data-price="18266"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/JordanAIR JORDAN 2 RETRO GREEN WHITE.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Jordan <h3 style="font-size: medium;">AIR JORDAN 2 RETRO GREEN WHITE </a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹&ensp; 12,999 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Jordan AIR JORDAN 2 RETRO GREEN WHITE" data-price="12999"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/JordanAIR JORDAN 2 RETRO LOW UNIVERSITY BLUE CEMENT.jpeg"
+                        alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Jordan <h3 style="font-size: medium;">AIR JORDAN 2 RETRO LOW UNIVERSITY BLUE CEMENT</a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹&ensp; 14,995 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Jordan AIR JORDAN 2 RETRO LOW UNIVERSITY BLUE CEMENT"
+                        data-price="14,995" class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/JordanAIR JORDAN 4 RETRO BLACK GREY.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">Jordan <h3 style="font-size: medium;">AIR JORDAN 4 RETRO BLACK GREY</a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹ &ensp;19,295 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="Jordan AIR JORDAN 4 RETRO BLACK GREY" data-price="19295"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs_item">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/New Balance5740 BLUE WHITE.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">New Balance <h3 style="font-size: medium;">5740 BLUE WHITE </a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹ &ensp;11,999 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="New Balance 5740 BLUE WHITE" data-price="11999"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/New Balance550 SEA SALT.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">New Balance <h3 style="font-size: medium;">550 SEA SALT </a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹ &ensp;18,049 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="New Balance 550 SEA SALT" data-price="18049"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/New Balance5740 DAYDREAM.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">New Balance <h3 style="font-size: medium;">5740 DAYDREAM</a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹ &ensp;11,999 </h4>
+                      <span>(4.0)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="New Balance 5740 DAYDREAM" data-price="11999"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-lg-3 col-md-6">
+                <div class="featured-item">
+                  <div class="featured-item-img">
+                    <a href="#">
+                      <img src="/images/imagesSneaker/New_Balance550lilacChalk.jpeg" alt="Images">
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h3><a href="#">New Balance <h3 style="font-size: medium;">550 Lilac Chalk</a></h3>
+                    <hr>
+                    <div class="content-in">
+                      <h4>₹&ensp; 18,049 </h4>
+                      <span>(4.4)<i class="fa fa-star"></i></span>
+                    </div>
+                    <hr>
+                    <div class="featured-content-list">
+                      <button type="button" data-name="New Balance 550 Lilac Chalk" data-price="18049"
+                        class="default-btn border-radius-5">Add to cart</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <p id="not_found"></p>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+              <!-- Content for the cart table goes here -->
+            </table>
+            <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger clear-all" data-dismiss="modal">Clear All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+ <!-- footer section -->
+
+ <footer class="footer-section">
+  <div class="container">
+      <div class="footer-cta pt-5 ">
+          <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div class="cta-text">
+                          <h4>Find us</h4>
+                          <span>MODERN COLLEGE GANESHKHIND, PUNE-16 </span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fas fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>+91 7058054327</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="far fa-envelope-open"></i>
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>SneakUP@gmail.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-content pt-5 pb-1">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="/images/logo-2-1@2x.png" class="img-fluid" alt="logo"></a>
+                      </div>
+                      <div class="footer-text">
+                          <p>Welcome to SneakUP, where passion for sneakers meets a commitment to providing the best shopping experience for sneaker enthusiasts worldwide.
+                            At SneakUP, our journey began with a shared love for sneakers and a vision to create a platform that goes beyond commerce.
+                             We understand that sneakers are not just footwear; they're expressions of style, identity, and culture.
+                             That's why we've curated a collection that transcends trends and embraces the diversity of sneaker culture.
+                          </p>
+                      </div>
+                      <div class="footer-social-icon">
+                          <span>Follow us</span>
+                          <ul class="social_icon">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#">Our Team</a></li>
+                          <li><a href="#">About Us</a></li>
+                          <li><a href="#">Our Gallery</a></li>
+                          <li><a href="#">Selection Process</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Sponsorship</a></li>
+                          <li><a href="#">Our Policies</a></li>
+                          <li><a href="#">Our Team</a></li>
+                          <li><a href="#">Contact us</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Subscribe</h3>
+                      </div>
+                      <div class="footer-text mb-25">
+                          <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                      </div>
+                      <div class="subscribe-form">
+                          <form action="#">
+                              <input type="text" placeholder="Email Address">
+                              <button><i class="fab fa-telegram-plane"></i></button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2023, All Right Reserved <a href="#">SneakUP</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Policy</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- **************shoppeing cart code********** -->
+
+  <script>
+    var shoppingCart = (function () {
+      var cart = [];
+
+      function Item(name, price, count) {
+        this.name = name;
+        this.price = price;
+        this.count = count;
+      }
+
+      // function saveCart() {
+      //   localStorage.setItem('shoppingCart', JSON.stringify(cart));
+      // }
+
+      function loadCart() {
+        cart = JSON.parse(localStorage.getItem('shoppingCart')) || [];
+      }
+
+      loadCart();
+
+      var obj = {};
+
+      obj.addItemToCart = function (name, price, count) {
+        for (var i = 0; i < cart.length; i++) {
+          if (cart[i].name === name) {
+            cart[i].count++;
+            saveCart();
+            return;
+          }
+        }
+        var item = new Item(name, price, count);
+        cart.push(item);
+        saveCart();
+      }
+
+      obj.setCountForItem = function (name, count) {
+        for (var i = 0; i < cart.length; i++) {
+          if (cart[i].name === name) {
+            cart[i].count = count;
+            break;
+          }
+        }
+        saveCart();
+      };
+
+      obj.removeItemFromCart = function (name) {
+        for (var i = 0; i < cart.length; i++) {
+          if (cart[i].name === name) {
+            cart[i].count--;
+            if (cart[i].count === 0) {
+              cart.splice(i, 1);
+            }
+            break;
+          }
+        }
+        saveCart();
+      }
+
+      obj.removeItemFromCartAll = function (name) {
+        for (var i = 0; i < cart.length; i++) {
+          if (cart[i].name === name) {
+            cart.splice(i, 1);
+            break;
+          }
+        }
+        saveCart();
+      }
+
+      obj.clearCart = function () {
+        cart = [];
+        saveCart();
+      }
+
+      obj.totalCount = function () {
+        var totalCount = 0;
+        for (var i = 0; i < cart.length; i++) {
+          totalCount += cart[i].count;
+        }
+        return totalCount;
+      }
+
+      obj.totalCart = function () {
+        var totalCart = 0;
+        for (var i = 0; i < cart.length; i++) {
+          totalCart += cart[i].price * cart[i].count;
+        }
+        return Number(totalCart.toFixed(2));
+      }
+
+      obj.listCart = function () {
+        var cartCopy = [];
+        for (var i = 0; i < cart.length; i++) {
+          var item = cart[i];
+          var itemCopy = {};
+          for (var prop in item) {
+            if (item.hasOwnProperty(prop)) {
+              itemCopy[prop] = item[prop];
+            }
+          }
+          itemCopy.total = Number(item.price * item.count).toFixed(2);
+          cartCopy.push(itemCopy)
+        }
+        return cartCopy;
+      }
+
+      return obj;
+    })();
+
+    $('.default-btn').click(function (event) {
+      event.preventDefault();
+      var name = $(this).data('name');
+      var price = Number($(this).data('price'));
+      shoppingCart.addItemToCart(name, price, 1);
+      displayCart();
+    });
+
+    $('.clear-cart').click(function () {
+      shoppingCart.clearCart();
+      displayCart();
+    });
+
+    function displayCart() {
+      var cartArray = shoppingCart.listCart();
+      var output = "";
+      for (var i = 0; i < cartArray.length; i++) {
+        output += "<tr>" +
+          "<td>" + cartArray[i].name + "</td>" +
+          "<td>(" + cartArray[i].price + ")</td>" +
+          "<td><div class='input-group'>" +
+          "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" +
+          "</div></td>" +
+          "<td><button class='delete-item btn btn-danger' data-name='" + cartArray[i].name + "'>X</button></td>" +
+          " = " +
+          "<td>" + cartArray[i].total + "</td>" +
+          "</tr>";
+      }
+      $('.show-cart').html(output);
+      $('.total-cart').html(shoppingCart.totalCart());
+      $('.total-count').html(shoppingCart.totalCount());
+    }
+
+    $('.show-cart').on("click", ".delete-item", function (event) {
+      var name = $(this).data('name');
+      shoppingCart.removeItemFromCartAll(name);
+      displayCart();
+    });
+
+    $('.show-cart').on("change", ".item-count", function (event) {
+      var name = $(this).data('name');
+      var count = Number($(this).val());
+      shoppingCart.setCountForItem(name, count);
+      displayCart();
+    });
+
+    displayCart();
+
+    // Tabs Single Page
+    $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+    $('.tab ul.tabs li a').on('click', function (g) {
+      var tab = $(this).closest('.tab'),
+        index = $(this).closest('li').index();
+      tab.find('ul.tabs > li').removeClass('current');
+      $(this).closest('li').addClass('current');
+      tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+      tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+      g.preventDefault();
+    });
+
+    $('#search_field').on('keyup', function () {
+      var value = $(this).val();
+      var patt = new RegExp(value, "i");
+
+      $('.tab_content').find('.col-lg-3').each(function () {
+        var $table = $(this);
+
+        if (!($table.find('.featured-item').text().search(patt) >= 0)) {
+          $table.hide();
+        }
+        if ($table.text().search(patt) >= 0) {
+          $table.show();
+          $('#not_found').hide();
+        } else {
+          $('#not_found').html("Product not found.").show();
+        }
+
+      });
+    });
+
+  </script>
+
+<!-- ***************slider code********* -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = document.querySelector('.slider');
+      const trends = slider.querySelector('.trends');
+      const prevButton = slider.querySelector('.prev');
+      const nextButton = slider.querySelector('.next');
+      const itemWidth = trends.querySelector('.col-lg-3').offsetWidth;
+
+      let currentPosition = 0;
+
+      function slideToPosition(position) {
+        trends.style.transform = `translateX(${position}px)`;
+      }
+
+      function slideNext() {
+        if (currentPosition > -(itemWidth * (trends.children.length - 4))) {
+          currentPosition -= itemWidth;
+          slideToPosition(currentPosition);
+        }
+      }
+
+      function slidePrev() {
+        if (currentPosition < 0) {
+          currentPosition += itemWidth;
+          slideToPosition(currentPosition);
+        }
+      }
+
+      nextButton.addEventListener('click', slideNext);
+      prevButton.addEventListener('click', slidePrev);
+    });
+
+
+
+  </script>
+
+<script src="/js/gsap.js"></script>
+</body>
+
+</html>

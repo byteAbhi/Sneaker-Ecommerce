@@ -1,0 +1,18 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore DEMO files
+DEMO
+# Ignore CYPRESS  files
+cypress
+# Ignore CONTROLLERS  files
+controllers
+# Ignore .vscode  files
+.vscode
+# Ignore .vscode  files
+uploads
+
+# Ignore .vscode  files
+routes
+# Ignore environment-specific files
+.env
